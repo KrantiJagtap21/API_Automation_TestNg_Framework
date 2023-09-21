@@ -10,7 +10,7 @@ import Common_API_Methods.Common_Utility_Method;
 import RequestRepository.Post_Req_Repository;
 import io.restassured.path.json.JsonPath;
 public class Post_TC1_Retry {
-	@Test(priority =2)
+	@Test
 	public static void extractor() throws IOException 
 	{
 		System.out.println("Extractor Method Called");
@@ -39,7 +39,7 @@ public class Post_TC1_Retry {
 	  }
    }
 }
-	@Test(priority =1)
+
 	public static void validator(String RequestBody, String ResponseBody) {
 		System.out.println("Validator Method Called");
 			JsonPath JspRequest = new JsonPath(RequestBody);
